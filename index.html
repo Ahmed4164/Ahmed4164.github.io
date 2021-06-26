@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ahmed website</title>
+  <!-- HTML -->
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<div id="loading">
+  <img class="ball-loading" src="Ball.png" alt="" />
+</div>
+
+<body onload="myFunction()">
+  <!-----------------header start------------->
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="myspan"  class="menu-span">&#9776</span>
+  <header class="top-header" id="top">
+   <!-- <h1 class="h1-span-mobile"><span>A</span>hmed</h1>-->
+    <nav id="myNav" class="mynav-bar">
+      <h1 class="h1-span"><span>A</span>hmed</h1>
+      
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <ul class="topnav">
+        <li><a href="index.html">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">skills</a></li>
+        <li><a href="Projects.html">projects</a></li>
+        <li><a href="#">team</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </nav>
+
+    <!--<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776</span>-->
+    <div class="content">
+      <h1 class="heading-name">Mohammed Ahmed</h1>
+      <p class="para1">web designer &amp; web developer</p>
+      <button type="submit">know more</button>
+    </div>
+  </header>
+  <!-----------------header end-------------->
+  <!-----------------about start-------------->
+  <section class="about-section">
+    <!-----------------biodata start------------->
+    <h1 class="about-me-h1">My Biodata</h1>
+    <h2 class="about-me-h2">Few words about me</h2>
+    <div class="about-me">
+      <div> <img class="myimage" src="About.png" alt="" /></div>
+      <p class="about-me-para">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere neque at molestie tempus. Donec orci lorem, vehicula non odio in, hendrerit eleifend nisl. Proin facilisis arcu ut est rhoncus, vitae blandit nisl tempus. Sed commodo convallis quam ut dapibus. Duis a ante eu tortor blandit ornare. Integer ac congue mauris. Donec facilisis venenatis ante at facilisis. <br /><br />
+        <br />Phasellus aliquam, velit id rutrum dignissim, erat magna lacinia justo, vitae blandit eros mauris et quam. Sed cursus tellus magna, vitae auctor quam commodo porttitor. In suscipit nunc id leo lacinia scelerisque.
+      </p>
+    </div>
+    <!-----------------biodata end-------------->
+    <!-----------------skills start------------->
+    <div class="skills">
+      <h1 class="skills-h1">My skills</h1>
+      <div class="learning-skills">
+        <div class="program">
+          <h2 class="skills-program-h2">programming skills</h2>
+          <!--  <div class="skills-program-section">-->
+          <h1 class="htmlh1">html</h1>
+          <div class="bar1">
+            80%
+          </div>
+          <h1 class="cssh1">css</h1>
+          <div class="bar2">
+            70%
+          </div>
+          <h1 class="jsh1">javascript</h1>
+          <div class="bar3">
+            10%
+          </div>
+          <!-- </div>-->
+        </div>
+        <div class="language">
+          <h2 class="skills-language-h2">Languages known</h2>
+          <!--   <div class="skills-language-section">-->
+          <h1 class="englishh1">English</h1>
+          <div class="bar1">
+            80%
+          </div>
+          <h1 class="urduh1">urdu</h1>
+          <div class="bar2">
+            90%
+          </div>
+          <h1 class="hindih1">hindi</h1>
+          <div class="bar3">
+            90%
+          </div>
+          <!-- </div>-->
+        </div>
+      </div>
+      <!-----------------skills end-------------->
+      <!-----------------my resume start-------------->
+      <div class="myresume">
+        <h1 class="education-h1">----Education----</h1>
+        <div class="education-section">
+          <div class="school">
+            <h2 class="school-name">JMHS SCHOOL</h2>
+            <h2 class="completed">completed-2018</h2>
+            <p class="school-para">i have completed my schooling with a good GPA of 9.5 &amp; learnt many things during my school. There are lot of memories that i will never forget. we use to go school for fun but actually we make memorable moments.</p>
+          </div>
+          <div class="college">
+            <h2 class="school-name">SRI CHAITANYA</h2>
+            <h2 class="completed">completed-2020</h2>
+            <p class="school-para">i have completed my college with a good percentage of 95.8 &amp; learnt many things during my school. There are lot of memories that i will never forget. we use to go school for fun but actually we make memorable moments.</p>
+          </div>
+        </div>
+        <!-- <div class="experience-section">
+        <h1 class="experience-h1">Experience</h1>
+      </div>-->
+      </div>
+  </section>
+  <!-----------------about end-------------->
+  <section class="parallax-section">
+    <div class="hire-me-section">
+      <h1 class="hire-me-h1">Hire Me</h1>
+      <p class="hire-me-para">i can make wonderful website and make them in less span of time</p>
+    </div>
+  </section>
+  <section class="contact-section">
+    <div class="small-form">
+      <h1 class="contact-h1">Get In Touch</h1>
+      <form class="form" action="" method="get" accept-charset="utf-8">
+        <input class="name" type="text" name="" id="" value="" placeholder="Enter your name*" />
+        <input class="email" type="text" name="" id="" value="" placeholder="Enter your e-mail*" />
+        <textarea name="message" id=rows="20" cols="80" placeholder="your message*"></textarea>
+      </form>
+      <button type="submit" class="send">send Message</button>
+    </div>
+    <hr />
+    <div class="team">
+      <div class="team-h1">
+        <h1>Team</h1>
+      </div>
+      <div class="teammates">
+        <div class="mubashir">
+          <h1>Mubashir</h1>
+          <p>Good</p>
+        </div>
+        <div class="mubashir">
+          <h1>Ahmed</h1>
+          <p>Good</p>
+        </div>
+        <div class="mubashir">
+          <h1>wajid</h1>
+          <p>Good</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="icons-div">
+      <div class="location-div">
+        <i class="fa fa-location-arrow"></i>
+        <h2>Hyderabad</h2>
+      </div>
+      <div class="email-div">
+        <i class="fa fa-envelope"></i>
+        <h2>mdahmed4164@gmail.com</h2>
+      </div>
+      <div class="call-div">
+        <i class="fa fa-phone"></i>
+        <h2>+91 9573312630</h2>
+      </div>
+      <div class="office-div">
+        <i class="fa fa-location-arrow"></i>
+        <h2>mumbai</h2>
+      </div>
+    </div>
+    <div class="copyright">
+      <h3 class="copy-h3">&copy; Copyright Reserved By <a href="" class="copy-name">Ahmed</a></h3>
+    </div>
+  </footer>
+  
+  <script type="text/javascript" charset="utf-8">
+    let preloader = document.getElementById('loading');
+
+    function myFunction() {
+      preloader.style.display = 'none';
+    }
+
+    function openNav() {
+      document.getElementById("myNav").style.display = "block";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.display = "none";
+          
+    }
+  </script>
+</body>
+
+</html>
