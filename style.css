@@ -1,0 +1,992 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:ital,wght@0,400;1,700&family=Raleway&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+:root {
+
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+::selection {
+  background-color: black;
+  color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#loading{
+  position: fixed;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(130, 130, 130);
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 99999;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.ball-loading{
+  width: 50px;
+  height: auto;
+  animation: rotate .8s infinite linear ;
+}
+@keyframes rotate{
+  from{
+    transform:  rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  width: 100vw;
+  height: 110vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Mountain.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: cover;
+}
+
+section.projects {
+  background-color: #D5A114;
+  width: 100vw;
+  height: 50vh;
+
+}
+
+.projects-div {
+  text-align: center;
+  /*  border: 3px solid powderblue;*/
+  padding: 0 1rem;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+h1.projects-h1,
+.projects-para {
+  color: black;
+  line-height: 3rem;
+  text-align: center;
+  letter-spacing: .1rem;
+  font-size: 2rem;
+
+}
+
+div.wrapper {
+  /*  border: 2px solid darkred;*/
+  display: flex;
+}
+
+.project-1img {
+  width: 10rem;
+  height: 10rem;
+}
+
+header nav {
+  width: 100vw;
+  height: 6rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  box-shadow: 0px 0px 10px #000;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+header nav ul li {
+  list-style: none;
+  padding: 2.2rem;
+}
+
+/*li.dropDownIcon {
+  display: none;
+  font-size: 3rem;
+
+}*/
+
+header nav ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+  text-transform: capitalize;
+}
+header nav a.closebtn{
+  display: none;
+}
+.h1-span{
+  font-size: 3rem;
+}
+span.menu-span{
+  display: none;
+}
+span {
+  color: red;
+  font-size: 4rem;
+  font-size: bolder;
+  font-family: 'Great Vibes', cursive;
+}
+
+.content {
+  color: #000;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1.heading-name {
+  font-size: 4rem;
+  line-height: 3rem;
+  letter-spacing: .5rem;
+  font-family: 'Great Vibes', cursive;
+}
+
+.para1 {
+  text-align: center;
+  line-height: 6rem;
+  font-size: 2rem;
+  letter-spacing: .2rem;
+}
+
+button {
+  border: 2px solid #D1313100;
+  width: 15rem;
+  margin: 2rem 0;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  font-weight: bold;
+  letter-spacing: .2rem;
+  color: white;
+  background-color: #302D2D87;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* -------------------header-end----------------- */
+
+
+/* -------------------about-start----------------- */
+section.about-section {
+  width: 100vw;
+  height: 100%;
+  /*  width: calc(100% - 2em);
+  margin: 2rem;*/
+  padding: 2rem;
+  background-color: rgb(130, 130, 130);
+}
+
+/*h2 {
+  font: 400 130px/0.8 'Great Vibes', Helvetica, sans-serif;
+  color: #fff;
+  text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+}*/
+.about-me-h1,
+.skills-h1,
+.education-h1,
+.experience-h1 {
+  /* both about and skills */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-weight: bold;
+  line-height: 3rem;
+  letter-spacing: .1rem;
+  padding: 4rem 0;
+  font-size: 4rem;
+  margin: 1rem;
+  font-family: 'Great Vibes', cursive;
+}
+
+.about-me-h2 {
+  display: flex;
+
+  justify-content: center;
+  align-content: center;
+  font-weight: bold;
+  line-height: 3rem;
+  letter-spacing: .1rem;
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.skills-program-h2,
+.skills-language-h2 {
+  display: flex;
+  /* both about and skills */
+  justify-content: center;
+  align-content: center;
+  font-weight: bold;
+  line-height: 3rem;
+  letter-spacing: .1rem;
+  font-size: 2rem;
+  margin: 1rem;
+  padding: 2rem;
+}
+
+
+
+div.about-me {
+  display: flex;
+  justify-content: space-between;
+  /*flex-direction: column;*/
+  /*  align-content: center;*/
+  
+}
+
+div.myimg {
+  width: 5rem;
+  height: 5rem;
+  display: block;
+}
+
+img.myimage {
+  width: 20rem;
+  height: 20rem;
+  padding: 1rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.about-me-para,
+.skills-language-para {
+  font-size: 1.4rem;
+  padding: /*.5rem .8rem 2rem 2rem*/ 1rem;;
+  letter-spacing: .1rem;
+}
+
+/* -------------------about-end----------------- */
+
+
+/* -------------------skills-start----------------- */
+
+.bar1 {
+  width: 80%;
+  /* background-color: rgb(130, 130, 130);
+/*  box-shadow: 2px 2px 2px #CDCFDFED;*/
+  background-color: black;
+  height: 30px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 8px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  box-shadow:  -5px -5px 5px rgba(0, 0, 0, 0.1),
+                5px 5px 5px rgba(0, 0, 0, 0.1),
+             5px 5px 5px rgba(0, 0, 0, 0.1),
+               5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+/*.bar1::before{
+  content: "ahmed";
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: black;
+  
+}*/
+
+.bar2,
+.bar3 {
+  width: 100%;
+  background: #000;
+  height: 30px;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 8px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  box-shadow:  -5px -5px 5px rgba(0, 0, 0, 0.1),
+                5px 5px 5px rgba(0, 0, 0, 0.1),
+             5px 5px 5px rgba(0, 0, 0, 0.1),
+               5px 5px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.htmlh1,
+.cssh1,
+.jsh1,
+.englishh1,
+.hindih1,
+.urduh1 {
+  text-transform: uppercase;
+  padding: 2rem 0;
+}
+
+.learning-skills {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  height: 100%
+}
+
+/* -------------------skills-end----------------- */
+
+
+
+/* ----------------my resume-start----------------- */
+div.education-section {
+  display: flex;
+  justify-content: space-around;
+}
+p.school-para{
+  padding: 2rem;
+  font-size: 1.4rem;
+}
+div.school,
+.college {
+  width: 30rem;
+  height: 30rem;
+  /*  box-shadow: -30px 30px 30px rgba(0, 0, 0, 0.3); 
+ /* border: 2px solid red;*/
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+    15px 15px 15px rgba(0, 0, 0, 0.1),
+    inset -50px -50px 50px rgba(255, 255, 255, 0.2),
+    inset 50px 50px 50px rgba(0, 0, 0, 0.1);
+  margin: 10px auto;
+}
+
+.school-name,
+.completed {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-weight: bold;
+
+}
+
+.school-name::after {
+  content: "";
+  width: 50%;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+/* ----------------my resume-end----------------- */
+
+
+
+/* ---------------hire-me-start ---------------- */
+.parallax-section {
+  width: 100vw;
+  height: 100%;
+}
+
+
+
+
+.hire-me-section {
+  /* background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.5)),
+    url('Bg.jpg');*/
+  background-color: rgb(130, 130, 130);
+  width: 100%;
+  height: 30rem;
+  background-attachment: fixed;
+}
+
+.hire-me-h1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: #000;
+  font-weight: bold;
+  line-height: 3rem;
+  letter-spacing: .1rem;
+  font-size: 4rem;
+  padding: 5rem;
+  font-family: 'Great Vibes', cursive;
+}
+
+.contact-h1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: #000;
+  font-weight: bold;
+  line-height: 3rem;
+  letter-spacing: .1rem;
+  font-size: 4rem;
+  padding-top: 5rem;
+  font-family: 'Great Vibes', cursive;
+  /* margin: 1rem;*/
+}
+
+.hire-me-para {
+  text-align: center;
+  color: black;
+  line-height: 2rem;
+  font-size: 2rem;
+  letter-spacing: .1rem;
+  padding: 2rem;
+}
+
+
+
+
+/* ---------------hire-me-end ---------------- */
+
+/* ---------------contact-me-start ---------------- */
+section.contact-section {
+  width: 100vw;
+  height: 100%;
+  background-color: rgb(130, 130, 130);
+}
+
+div.small-form {
+  width: 100vw;
+  height: 100%;
+  /*background-color: #000000;*/
+  background-color: rgb(130, 130, 130);
+}
+
+form.form {
+  display: flex;
+  flex-direction: column;
+  padding: 10rem;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  /* background: #000;*/
+  background-color: rgb(130, 130, 130);
+  padding: 2rem 0;
+  margin: 3rem auto;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid white;
+
+  color: #fff;
+}
+
+/*input:hover {
+  box-shadow: 2px 2px 2px 4px #D00909;
+}
+
+textarea:hover {
+  box-shadow: 2px 2px 2px 4px #D00909;
+}*/
+
+textarea {
+  width: 100%;
+  background: #FFFFFF00;
+  color: white;
+  outline: none;
+  padding: 1rem 1rem;
+  margin: 9rem 0 1rem 0;
+  border: none;
+  height: 20rem;
+  border: 2px solid white;
+}
+
+::placeholder {
+  color: #000;
+  font-size: 1.5rem;
+
+}
+
+button.send {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  align-items: center;
+  width: 30%;
+  margin: 0 auto 5rem auto;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+
+/*--++----------------icons section-----_-----*/
+.icons-div {
+  width: 100%;
+  height: 28rem;
+  display: flex;
+  width: 100%;
+  /*  background-color: #909761;*/
+  background-color: rgb(130, 130, 130);
+  flex-wrap: wrap;
+}
+
+.location-div,
+.email-div,
+.call-div,
+.office-div {
+  width: 50%;
+  height: 50%;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div i {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* -------------team--------------------+--- */
+.team {
+  background-color: rgb(130, 130, 130);
+
+}
+
+.team-h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  line-height: 3rem;
+  letter-spacing: .1rem;
+  padding: 6rem 0 0 0;
+  font-size: 4rem;
+  margin: 1rem;
+  font-family: 'Great Vibes', cursive;
+}
+
+.teammates {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.mubashir {
+  border: 2px solid firebrick;
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+/*---------icons------end----------------*/
+div.copyright {
+  width: 100vw;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #3C4342;*/
+  background-color: rgb(130, 130, 130);
+  color: #000;
+}
+
+h3.copy-h3 {
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+}
+
+a.copy-name {
+  color: #000;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------contact-me-end ---------------- */
+
+/*  nav ul li{
+    display: none;
+  }
+
+ nav ul li.dropDownIcon {
+   display: block;
+
+position: absolute;
+ }
+ 
+ 
+
+nav ul.topnav.responsive{
+  position: absolute;
+
+background-color: rgba(0, 0, 0, 1);
+
+width: 100vw;
+
+height: 50vh; padding: 10px;
+}
+ul.topnav.responsive li.dropDownIcon{
+  float: left;
+}
+ul.topnav.responsive li{
+  display: block;
+}
+}*/
+
+/*@media(max-width:500px){
+  header #main-nav{
+    display:none;
+  }
+  
+  .main-wrapper{
+    position:relative;
+  }
+  .hamburger{
+    position: absolute;
+    top: 15px;
+    right:5px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+  .hamburger img{
+    font-size: 3rem;
+  }
+  .mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(130, 130, 130);
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+    padding: 2rem;
+    transform: translateX(-100%);
+  }
+  .open{
+    transform: translateX(0);
+  }
+  
+  .times{
+    position: absolute;
+    background: none;
+    top:10px;
+    right: 10px;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    
+  }
+  .times img{
+    font-size: 3rem;
+  }
+  .mobile-nav ul li{
+    list-style: none;
+  }
+  .mobile-nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 3rem;
+    
+  }
+  
+  
+}*/
+
+/* Extra small devices (phones, 600px and down) */
+/*my portrait phone*/
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 55%;
+  }
+
+/*header nav ul li {
+  list-style: none;
+  padding: .8rem;
+
+}
+
+li.dropDownIcono {
+  display: none;
+  font-size: 1rem;
+
+}
+
+header nav ul li a {
+
+  font-size: 1.4rem;
+
+}*/
+/*nav h1 a ul li a{
+  display: block;
+}*/
+header nav{
+ display:none;
+ height: 100vh;
+ background-color: rgb(130, 130, 130);
+
+}
+header nav h1.h1-span{
+  text-align: center;
+  display: block;
+ /* margin-top: 2rem;*/
+ padding: 5rem 0 2rem 0;
+  font-size: 10rem;
+}
+h1 .h1-span-mobile{
+  position: absolute;
+  display: block;
+}
+header nav a.closebtn{
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2rem;
+  font-size: 5rem;
+  text-decoration: none;
+  color: black;
+}
+header nav ul{
+  display: block;
+}
+
+span.menu-span{
+  position: absolute;
+  background-color: rgb(126, 126, 126);
+  z-index: 9999999;
+  color: #000;
+  /*display: inline-block;*/
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+  padding: 0 2rem ;
+  cursor: pointer;
+}
+header nav ul li{
+  display:block;
+  text-align: center;
+  padding: 3.3rem;
+  
+}
+/* ----------------responsive nav---------+++++; */
+header nav h1.h1-span {
+  font-size: 2rem;
+}
+
+header nav h1 span {
+
+  font-size: 2rem;
+
+}
+
+header nav div.content {
+
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1.heading-name {
+  font-size: 3rem;
+  line-height: 3rem;
+  letter-spacing: .1rem;
+
+}
+
+.para1 {
+  text-align: center;
+  line-height: 4rem;
+  font-size: 1.3rem;
+  letter-spacing: .1rem;
+}
+
+img.myimage {
+  width: 20rem;
+  height: 20rem;
+  padding: 1rem;
+  display: block;
+  margin: 0 auto;
+}
+div.about-me {
+  display: flex;
+  justify-content: center;
+  /*flex-direction: column;*/
+    align-content: center;
+  flex-wrap: wrap;
+}
+
+.about-me-para,
+.skills-language-para {
+  font-size: 1.4rem;
+  padding: /*.5rem .8rem 2rem 1rem*/ 1rem;
+  letter-spacing: .1rem;
+}
+
+div.education-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+div.school,
+.college {
+  width: 30rem;
+  height: 30rem;
+  margin: 20px auto;
+}
+
+.hire-me-h1,
+.contact-h1 {
+  color: #000;
+  font-weight: bold;
+  line-height: 3rem;
+  letter-spacing: .1rem;
+  font-size: 3rem;
+  padding: 2rem;
+
+}
+
+/*.skills-program-h2,*/
+.skills-language-h2 {
+  font-size: 2rem;
+  margin: 1rem;
+  padding: 4rem;
+}
+
+/* margin: 1rem;*/
+/* contact-responsiveness */
+form.form {
+  padding: 0 2rem;
+}
+
+input {
+  padding: 2rem 0;
+  margin: 2rem auto;
+}
+
+textarea {
+  padding: .5rem .5rem;
+  margin: 2rem auto;
+
+  height: 150px;
+
+}
+
+::placeholder {
+  color: white;
+  font-size: 1.4rem;
+
+}
+
+button.send {
+  display: inline-block;
+  width: 40%;
+  margin: 1rem auto 2rem auto;
+  text-align: center;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-h1 {
+  padding-top: 3rem;
+}
+
+.hire-me-h1 {
+  padding-top: 5rem;
+}
+
+.hire-me-para {
+  text-align: center;
+  color: white;
+  line-height: 2rem;
+  font-size: 2rem;
+  letter-spacing: .1rem;
+  padding-top: 5rem;
+ }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/*my landscape mode*/
+
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+
+  
+  
+}
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+/*desktop portrait and desktop landscape*/
+@media only screen and (min-width: 768px) {
+  nav {
+    background: blue;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {
+    background: orange;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {
+    background: pink;
+  }
+}
